@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var count=0;
+        window.onload=function(){run()};   //文档一加载就执行run()方法
+
+        function run(){
+            var pic=document.getElementsByTagName("img");
+            for(var i=0;i<pic.length;i++){    //让每张图片不显示
+                pic[i].style.display="none";
+            }
+            pic[count%4].style.display="block";   //  让哪张图片显示  0,1,2,3,   0,1,2,3,   0,1,2,3
+            count++;
+        }
+        setInterval("run()",1000);
+    </script>
+</head>
+<body>
+<img src="images/class1-1.jpg"/>
+<img src="images/class1-2.jpg"/>
+<img src="images/class1-3.jpg"/>
+<img src="images/class1-4.jpg"/>
+</body>
+</html>

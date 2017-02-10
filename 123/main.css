@@ -1,0 +1,35 @@
+#main{height:797px;}
+.main_t{height:195px;}
+.main_t p{
+    line-height:30px;
+    /*//word-spacing 属性增加或减少单词间的空白（即字间隔）。*/
+    word-spacing:30px;
+/*//letter-spacing 属性增加或减少字符间的空白（字符间距）。*/
+    letter-spacing:15px;
+    /*  //text-indent 属性规定文本块中首行文本的缩进。*/
+    text-indent:30px;
+}
+.main_b a{
+    display:block;
+    width:285px;
+    height:182px;
+    float:left;
+    position:relative;
+}
+.main_b a img{
+    width:285px;
+    height:182px;
+}
+.main_b .mask{
+    display:block;
+    width:285px;
+    height:182px;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0;
+}
+.main_b .mask:hover{
+    opacity:1;
+}
